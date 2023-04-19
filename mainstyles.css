@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navBar {
+    display: flex;
+    padding: 20px 0 20px 0;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    position: fixed;
+    width: 1280px;
+    margin-top: 0;
+}
+
+.logo {
+    width: auto;
+}
+
+ul {
+    display: flex;
+    font-family: 'Mohave', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #37A;
+    list-style: none;
+    gap: 50px;
+}
+
+li a:link, a:visited {
+    color: #37a;
+    text-decoration: none;
+}
+
+li a:hover, a:active {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Mohave', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+}
+
+.navButton {
+border: 0;
+background-color: black;
+}
+
+.navButton i {
+    color: whitesmoke;
+}
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: rgb(51,119,170);
+    background-color: rgb(51,119,170  0.7);
+    z-index: 9;
+    position: fixed;
+    left:0;
+    top:0;
+    overflow-x: hidden;
+    transition:all 0.5s;
+}
+
+.overlay-content {
+    position:relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    display: block;
+    font-family: 'Mohave', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.3s;
+
+}
+
+.overlay a:hover, .overlay a:focus {
+    font-weight: 300;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+@media screen and (max-height: 360px) {
+    .overlay a {font-size: 20px;}
+    .overlay, .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+}
+
+@media only screen and (max-width : 450px) {
+    #desktopSize {
+       display: none;
+    }
+ 
+    Botao hamburger {
+       display: block;
+    }
+ }
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Mohave', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.basicDiv {
+/*     background-color: cadetblue; */
+    margin: 10px 0 5% 0;
+}
+
+.basicDiv p {
+    color: #37A;
+    font-family: 'Mohave', sans-serif;
+    text-align: justify;
+    margin: 10px 20% 5% 20%;
+    padding-bottom: 5%;
+}
+
+#top {
+    padding-top: 200px;
+    padding-bottom: 50vh;
+    background-image: url('img/new/top_image_band.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+}
